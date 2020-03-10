@@ -6,4 +6,7 @@ RUN apk add --update --no-cache \
     nc \
     nmap \ 
     vim && rm -rf /var/cache/apk/*
+VOLUME /data
+WORKDIR /data
+
 ENTRYPOINT ["nmap"]
